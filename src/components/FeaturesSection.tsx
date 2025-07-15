@@ -5,38 +5,38 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: Brain,
-      title: "AI-Powered Insights",
-      description: "Advanced neural networks will analyze every conversation nuance, extracting key decisions, action items, and sentiment patterns with unprecedented accuracy.",
+      title: "Emotional OS",
+      description: "Your pendant truly knows you, making every agentic action feel intuitive and personal. It understands tone, context, and emotional cues to respond perfectly.",
       hoverColor: "text-purple-500"
     },
     {
       icon: Zap,
-      title: "Real-Time Automation",
-      description: "Tasks will trigger automatically as conversations unfold. Create tickets, send emails, update CRMs—all while you're still talking, seamlessly in the background.",
+      title: "Real-Time Task Automation",
+      description: "It handles scheduling so you don't have to. Creates summaries, sends emails, updates calendars—all while you're still in conversation.",
       hoverColor: "text-yellow-500"
     },
     {
       icon: FileText,
-      title: "Intelligent Summaries",
-      description: "Transform hours of dialogue into precise, actionable summaries. Every key point will be captured, every decision documented with perfect clarity.",
+      title: "Conversation Memories",
+      description: "Never forget an important detail. Your pendant stores transcripts, notes key information, and provides instant recall of past interactions.",
       hoverColor: "text-blue-500"
     },
     {
       icon: Cog,
-      title: "Seamless Integration",
-      description: "Connect with 200+ tools effortlessly. From Slack to Salesforce, Lyzn.ai will become the intelligence layer across your entire workflow ecosystem.",
+      title: "AI Agents Marketplace",
+      description: "Access a robust marketplace of AI agents created by developers worldwide. Integrate with countless tools and services effortlessly.",
       hoverColor: "text-green-500"
     },
     {
       icon: Shield,
-      title: "Enterprise Security",
-      description: "Bank-grade encryption and SOC 2 compliance will ensure your conversations remain private and secure at every step of the process.",
+      title: "Mind Chat AI",
+      description: "Chat with AI that answers based on your memories. Explore your thoughts, get insights, and understand patterns in your conversations.",
       hoverColor: "text-red-500"
     },
     {
       icon: Globe,
-      title: "Global Language Support",
-      description: "Understand and process conversations in 50+ languages with real-time translation and cultural context awareness for global teams.",
+      title: "Universal Listening",
+      description: "Works in person or virtual meetings. Captures conversations across all contexts—from coffee chats to board meetings.",
       hoverColor: "text-indigo-500"
     }
   ];
@@ -47,13 +47,13 @@ const FeaturesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading tracking-heading">
-            Where Conversations
+            Your Personal
             <span className="block text-primary">
-              Will Meet Intelligence
+              Agentic AI
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-body">
-            Every feature designed to transform the way you'll capture, understand, and act on human conversation—with the precision of AI and the intuition of human insight.
+            Every Lyzner needs a companion that thinks, plans, and acts. Meet your proactive partner that handles life's tasks while you focus on what truly matters.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const FeaturesSection = () => {
               <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors font-heading">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed font-body">
+              <p className="text-muted-foreground leading-relaxed font-body text-lg">
                 {feature.description}
               </p>
             </div>
@@ -82,8 +82,8 @@ const FeaturesSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button className="bg-primary text-primary-foreground px-8 py-4 font-semibold text-lg hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg shadow-primary/25 lyzn-card">
-            Explore All Features
+          <button className="lyzn-button-primary px-8 py-4 font-semibold text-lg shadow-lg shadow-primary/25 lyzn-card">
+            Discover Your Superpowers
           </button>
         </div>
       </div>

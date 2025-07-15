@@ -5,55 +5,55 @@ const UseCasesSection = () => {
   const useCases = [
     {
       icon: Users,
-      title: "Team Meetings",
-      story: "Sarah's Sprint Planning Vision",
-      description: "Imagine every sprint planning session becoming a treasure trove of insights. Lyzn.ai will capture user story priorities, automatically create JIRA tickets, and send personalized follow-ups to each team member.",
-      metrics: "Up to 85% faster sprint setup",
+      title: "Personal Conversations",
+      story: "Maya's Relationship Breakthrough",
+      description: "Your pendant remembers the small details that matter. It tracks emotional patterns, suggests conversation starters, and helps you become the friend everyone needs.",
+      metrics: "Deeper connections, guaranteed",
       hoverColor: "hover:bg-blue-50",
       iconColor: "text-blue-500"
     },
     {
       icon: Briefcase,
-      title: "Sales Calls",
-      story: "Marcus's Deal-Closing Future",
-      description: "Picture this: mid-conversation, Lyzn.ai detects buying signals and instantly updates your CRM with lead scoring. While you focus on building rapport, automated follow-up emails will be drafted with personalized talking points.",
-      metrics: "Potential 40% higher close rates",
+      title: "Workplace Productivity",
+      story: "Alex's Corporate Game-Changer",
+      description: "Never miss a deadline again. Your pendant creates tasks from conversations, schedules follow-ups, and automates mundane procedures while you focus on strategic thinking.",
+      metrics: "3x productivity boost",
       hoverColor: "hover:bg-green-50",
       iconColor: "text-green-500"
     },
     {
       icon: GraduationCap,
-      title: "Educational Sessions",
-      story: "Professor Chen's Teaching Revolution",
-      description: "Envision lecture recordings transforming into interactive study guides. Students will receive personalized learning paths based on their questions, while educators get insights into which concepts need reinforcement.",
-      metrics: "Expected 65% better retention",
+      title: "Academic Excellence",
+      story: "Sam's Study Revolution",
+      description: "Transform lectures into personalized study guides. Your pendant captures key concepts, creates flashcards, and provides AI-powered explanations based on your learning style.",
+      metrics: "Better grades, less stress",
       hoverColor: "hover:bg-purple-50",
       iconColor: "text-purple-500"
     },
     {
       icon: Stethoscope,
-      title: "Healthcare Consultations",
-      story: "Dr. Rodriguez's Clinical Breakthrough",
-      description: "Imagine patient conversations becoming structured medical records in real-time. Treatment plans will generate automatically while maintaining HIPAA compliance, allowing doctors to focus entirely on patient care.",
-      metrics: "Potential 50% less admin time",
+      title: "Mental Health & Introspection",
+      story: "Jordan's Self-Discovery Journey",
+      description: "Understand your emotional patterns and triggers. Your pendant provides insights into your conversations, helping you grow and maintain better mental health.",
+      metrics: "Self-awareness unlocked",
       hoverColor: "hover:bg-red-50",
       iconColor: "text-red-500"
     },
     {
       icon: Building,
-      title: "Board Meetings",
-      story: "The Executive Edge of Tomorrow",
-      description: "Strategic decisions will flow from boardroom to execution seamlessly. Key resolutions will trigger department briefings, stakeholder updates, and project timelines—all before the meeting ends.",
-      metrics: "Expected 3x faster execution",
+      title: "Creative Projects",
+      story: "The Artist's Assistant",
+      description: "Never lose a creative idea again. Your pendant captures inspiration from conversations, organizes thoughts, and helps you turn fleeting moments into masterpieces.",
+      metrics: "Ideas captured, dreams realized",
       hoverColor: "hover:bg-indigo-50",
       iconColor: "text-indigo-500"
     },
     {
       icon: Headphones,
-      title: "Customer Support",
-      story: "Emma's Support Magic Reimagined",
-      description: "Every support call will become a learning opportunity. Issues will auto-categorize, knowledge base articles will update in real-time, and customer satisfaction surveys will deploy with surgical precision.",
-      metrics: "Target 90% issue resolution",
+      title: "Virtual Meetings",
+      story: "Remote Work, Supercharged",
+      description: "Make every virtual meeting count. Your pendant summarizes calls, tracks action items, and ensures nothing falls through the cracks in your digital workspace.",
+      metrics: "Remote work mastery",
       hoverColor: "hover:bg-orange-50",
       iconColor: "text-orange-500"
     }
@@ -65,13 +65,13 @@ const UseCasesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading tracking-heading">
-            Future Stories,
+            Every Lyzner
             <span className="block text-primary">
-              Unlimited Potential
+              Has a Story
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-body">
-            Discover how professionals across industries will transform their conversations into competitive advantages with Lyzn.ai.
+            From strengthening personal relationships to revolutionizing productivity—discover how the Lyzn AI pendant transforms every conversation into something meaningful.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ const UseCasesSection = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-muted-foreground leading-relaxed mb-6 text-sm font-body">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-lg font-body">
                   {useCase.description}
                 </p>
 
@@ -157,8 +157,8 @@ const UseCasesSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button className="bg-primary text-primary-foreground px-8 py-4 font-semibold text-lg hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg shadow-primary/25 lyzn-card">
-            Join the Waitlist
+          <button className="lyzn-button-primary px-8 py-4 font-semibold text-lg shadow-lg shadow-primary/25 lyzn-card">
+            The Lyzner That Everyone Needs
           </button>
         </div>
       </div>

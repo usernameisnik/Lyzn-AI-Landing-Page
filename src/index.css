@@ -110,4 +110,20 @@
   .lyzn-glass {
     @apply bg-card/70 backdrop-blur-xl border border-card-border/30;
   }
+
+  .lyzn-button {
+    @apply font-heading transition-all duration-300 ease-in-out;
+  }
+
+  .lyzn-button:hover {
+    @apply bg-card text-primary;
+  }
+
+  .lyzn-button-primary {
+    @apply bg-primary text-primary-foreground font-heading transition-all duration-300 ease-in-out;
+  }
+
+  .lyzn-button-primary:hover {
+    @apply bg-card text-primary;
+  }
 }
