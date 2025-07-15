@@ -24,7 +24,7 @@ const FeaturesSection = () => {
     {
       icon: Cog,
       title: "Seamless Integration",
-      description: "Connect with 200+ tools effortlessly. From Slack to Salesforce, Storizz will become the intelligence layer across your entire workflow ecosystem.",
+      description: "Connect with 200+ tools effortlessly. From Slack to Salesforce, Lyzn.ai will become the intelligence layer across your entire workflow ecosystem.",
       hoverColor: "text-green-500"
     },
     {
@@ -42,17 +42,17 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="features" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ marginLeft: '160px', marginRight: '160px' }}>
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading tracking-heading">
             Where Conversations
-            <span className="block bg-gradient-to-r from-brand-600 to-violet-600 bg-clip-text text-transparent">
+            <span className="block text-primary">
               Will Meet Intelligence
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-body">
             Every feature designed to transform the way you'll capture, understand, and act on human conversation—with the precision of AI and the intuition of human insight.
           </p>
         </div>
@@ -62,18 +62,18 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group apple-card rounded-3xl p-8 hover:shadow-2xl hover:shadow-gray-900/10 transition-all duration-300 transform hover:-translate-y-1"
+              className="group lyzn-card p-8 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 transform hover:-translate-y-1"
             >
               {/* Icon */}
               <div className="mb-6">
-                <feature.icon className={`w-8 h-8 text-gray-400 group-hover:${feature.hoverColor} transition-colors duration-300`} />
+                <feature.icon className={`w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300`} />
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-brand-600 transition-colors">
+              <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors font-heading">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed font-body">
                 {feature.description}
               </p>
             </div>
@@ -82,7 +82,7 @@ const FeaturesSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button className="bg-gradient-to-r from-brand-500 to-violet-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-brand-600 hover:to-violet-700 transition-all transform hover:scale-105 shadow-lg shadow-brand-500/25">
+          <button className="bg-primary text-primary-foreground px-8 py-4 font-semibold text-lg hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg shadow-primary/25 lyzn-card">
             Explore All Features
           </button>
         </div>

@@ -45,12 +45,12 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
               <img 
-                src="/lovable-uploads/b0708e06-e18e-4063-a748-f2f43a8a6a52.png" 
-                alt="Storizz" 
+                src="/lovable-uploads/47d5203b-ce62-49d0-89c9-44735c8de46e.png" 
+                alt="Lyzn.ai" 
                 className="h-8"
               />
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
+            <p className="text-gray-400 mb-6 leading-relaxed max-w-md font-body">
               Transforming conversations into actionable insights with AI-powered intelligence. 
               Every word will matter, every insight will count.
             </p>
@@ -62,7 +62,7 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors"
+                  className="w-10 h-10 bg-gray-700 flex items-center justify-center hover:bg-primary transition-colors lyzn-card"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
@@ -126,8 +126,8 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 Storizz. All rights reserved.
+          <p className="text-gray-400 text-sm font-body">
+            © 2024 Lyzn.ai. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <span className="text-gray-400 text-sm">SOC 2 Ready</span>

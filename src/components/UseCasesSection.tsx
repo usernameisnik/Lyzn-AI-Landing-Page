@@ -7,7 +7,7 @@ const UseCasesSection = () => {
       icon: Users,
       title: "Team Meetings",
       story: "Sarah's Sprint Planning Vision",
-      description: "Imagine every sprint planning session becoming a treasure trove of insights. Storizz will capture user story priorities, automatically create JIRA tickets, and send personalized follow-ups to each team member.",
+      description: "Imagine every sprint planning session becoming a treasure trove of insights. Lyzn.ai will capture user story priorities, automatically create JIRA tickets, and send personalized follow-ups to each team member.",
       metrics: "Up to 85% faster sprint setup",
       hoverColor: "hover:bg-blue-50",
       iconColor: "text-blue-500"
@@ -16,7 +16,7 @@ const UseCasesSection = () => {
       icon: Briefcase,
       title: "Sales Calls",
       story: "Marcus's Deal-Closing Future",
-      description: "Picture this: mid-conversation, Storizz detects buying signals and instantly updates your CRM with lead scoring. While you focus on building rapport, automated follow-up emails will be drafted with personalized talking points.",
+      description: "Picture this: mid-conversation, Lyzn.ai detects buying signals and instantly updates your CRM with lead scoring. While you focus on building rapport, automated follow-up emails will be drafted with personalized talking points.",
       metrics: "Potential 40% higher close rates",
       hoverColor: "hover:bg-green-50",
       iconColor: "text-green-500"
@@ -60,18 +60,18 @@ const UseCasesSection = () => {
   ];
 
   return (
-    <section id="use-cases" className="py-24 bg-white">
+    <section id="use-cases" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ marginLeft: '160px', marginRight: '160px' }}>
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading tracking-heading">
             Future Stories,
-            <span className="block bg-gradient-to-r from-brand-600 to-violet-600 bg-clip-text text-transparent">
+            <span className="block text-primary">
               Unlimited Potential
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Discover how professionals across industries will transform their conversations into competitive advantages with Storizz.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-body">
+            Discover how professionals across industries will transform their conversations into competitive advantages with Lyzn.ai.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ const UseCasesSection = () => {
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden apple-card rounded-3xl p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gray-900/10 ${useCase.hoverColor} ${
+              className={`group relative overflow-hidden lyzn-card p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10 ${useCase.hoverColor} ${
                 index === 0 || index === 3 ? 'md:col-span-2 lg:col-span-1' : ''
               } ${
                 index === 1 || index === 4 ? 'lg:col-span-2' : ''
@@ -94,23 +94,23 @@ const UseCasesSection = () => {
                 </div>
 
                 {/* Story Title */}
-                <div className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wider">
+                <div className="text-sm font-medium text-muted-foreground mb-2 uppercase tracking-wider font-mono">
                   {useCase.story}
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-4 font-heading">
                   {useCase.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 leading-relaxed mb-6 text-sm">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-sm font-body">
                   {useCase.description}
                 </p>
 
                 {/* Metrics */}
-                <div className="inline-flex items-center bg-gray-100/80 backdrop-blur-sm rounded-full px-4 py-2">
-                  <span className="text-sm font-semibold text-gray-900">
+                <div className="inline-flex items-center bg-secondary/80 backdrop-blur-sm px-4 py-2 lyzn-card">
+                  <span className="text-sm font-semibold text-foreground font-mono">
                     {useCase.metrics}
                   </span>
                 </div>
@@ -122,42 +122,42 @@ const UseCasesSection = () => {
         {/* Phone Mockups */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
           <div className="relative mx-auto">
-            <div className="w-64 h-auto bg-black rounded-[2.5rem] p-2 shadow-2xl">
+            <div className="w-64 h-auto bg-black p-2 shadow-2xl lyzn-card">
               <img 
                 src="/lovable-uploads/fbc13542-447f-432d-ac27-41e54eda2f1a.png" 
-                alt="Storizz Mobile Dashboard" 
-                className="w-full h-auto rounded-[2rem]"
+                alt="Lyzn.ai Mobile Dashboard" 
+                className="w-full h-auto lyzn-card"
               />
             </div>
-            <p className="text-center mt-4 text-gray-600 font-medium">Dashboard Overview</p>
+            <p className="text-center mt-4 text-muted-foreground font-medium font-body">Dashboard Overview</p>
           </div>
           
           <div className="relative mx-auto">
-            <div className="w-64 h-auto bg-black rounded-[2.5rem] p-2 shadow-2xl">
+            <div className="w-64 h-auto bg-black p-2 shadow-2xl lyzn-card">
               <img 
                 src="/lovable-uploads/b0ab4e8b-b334-4f9f-ac8f-6a628b7a15c8.png" 
                 alt="Meeting Analysis" 
-                className="w-full h-auto rounded-[2rem]"
+                className="w-full h-auto lyzn-card"
               />
             </div>
-            <p className="text-center mt-4 text-gray-600 font-medium">Meeting Analysis</p>
+            <p className="text-center mt-4 text-muted-foreground font-medium font-body">Meeting Analysis</p>
           </div>
           
           <div className="relative mx-auto">
-            <div className="w-64 h-auto bg-black rounded-[2.5rem] p-2 shadow-2xl">
+            <div className="w-64 h-auto bg-black p-2 shadow-2xl lyzn-card">
               <img 
                 src="/lovable-uploads/6443a65a-3c61-4736-87e3-b76516f54dd1.png" 
                 alt="AI Assistant" 
-                className="w-full h-auto rounded-[2rem]"
+                className="w-full h-auto lyzn-card"
               />
             </div>
-            <p className="text-center mt-4 text-gray-600 font-medium">AI Assistant</p>
+            <p className="text-center mt-4 text-muted-foreground font-medium font-body">AI Assistant</p>
           </div>
         </div>
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button className="bg-gradient-to-r from-brand-500 to-violet-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-brand-600 hover:to-violet-700 transition-all transform hover:scale-105 shadow-lg shadow-brand-500/25">
+          <button className="bg-primary text-primary-foreground px-8 py-4 font-semibold text-lg hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg shadow-primary/25 lyzn-card">
             Join the Waitlist
           </button>
         </div>
